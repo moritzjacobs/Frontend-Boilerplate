@@ -1,0 +1,20 @@
+// import default settings
+@import "vendor/chroma-grid/settings";
+
+// personal grid settings
+$column-amount			: 12;
+$column-width 			: em(70);
+$column-gutter 			: em(10);
+$container-padding 		: em(0);
+$container-width 		: em(960);
+
+$layout 				: responsive; // fixed, fluid, responsive
+
+$scaffolding 			: false;
+$debug-show-grid 		: false;
+
+
+
+
+// import the grid
+@import "vendor/chroma-grid/grid";

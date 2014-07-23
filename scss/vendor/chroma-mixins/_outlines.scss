@@ -1,0 +1,20 @@
+
+// no outline on active link-element
+@mixin no-outline() {
+	&:hover,
+	&:active,
+	&:focus {
+		outline: 0;
+	}
+
+}
+
+
+// http://www.hongkiat.com/blog/css-dotted-outline/
+@mixin active-style() {
+	&:active,
+	&:focus {
+		outline: 0;
+		backgrond-color: #e9841d;
+	}	
+}

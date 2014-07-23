@@ -1,0 +1,55 @@
+// Typography
+///////////////////////////////////////////////////////////////////////////////
+$body-font	:	Helvetica, Arial, sans-serif;
+$head-font	:	$body-font;
+$mono-font	:	monospace;
+
+// Sizes
+///////////////////////////////////////////////////////////////////////////////
+$font-size: 18px;
+$letter-spacing: 0;
+$line-height: $font-size * 155/100;
+$border-radius: em(3);
+
+// Colors
+///////////////////////////////////////////////////////////////////////////////
+
+$white 				: #fcfcfc;
+$black 				: #222222;
+
+$blue	: 	#1d859e;
+
+
+$em-color: $blue;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #CCC;
+
+
+$page-background 	: $white;
+
+//  Font Colors
+$font-color 		: $black;
+$link-color 		: $em-color;
+$link-color--hover  : lighten($link-color, 1/4);
+
+// Border color
+$border-color: $light-gray;
+
+// Flash Colors
+$error-color: red;
+$notice-color: yellow;
+$success-color: green;
+
+
+$duration 			: 250ms;
+$timing 			: ease-in-out;
+
+// Shadows
+///////////////////////////////////////////////////////////////////////////////
+$default-box-shadow-color		:	rgba($black, 1/4);
+$default-box-shadow-h-offset	:	0px;
+$default-box-shadow-v-offset	:	1px;
+$default-box-shadow-blur		:	10px;
+$default-box-shadow-spread		:	false;
+$default-box-shadow-inset		:	false;

@@ -1,0 +1,39 @@
+@mixin visual-grid-gradient-background($values...) {
+	background-image: deprecated-webkit-gradient(linear, left top, left bottom, $values);
+	background-image:  -webkit-linear-gradient(left, $values);
+	background-image:     -moz-linear-gradient(left, $values);
+	background-image:      -ms-linear-gradient(left, $values);
+	background-image:       -o-linear-gradient(left, $values);
+	background-image: unquote("linear-gradient(left, #{$values})");
+}
+
+@if $visual-grid == true or $visual-grid == yes {
+	body:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		left: 0;
+		margin: 0 auto;
+		opacity: $visual-grid-opacity;
+		position: fixed;
+		right: 0;
+		@if unitless($container-padding) {
+			max-width: $container-width - em($container-padding) * 2;
+		} @else {
+			max-width: $container-width - $container-padding*2;
+		}
+		pointer-events: none;
+		@if ($visual-grid-view == gutter) {
+			@include visual-grid-gradient-background(gutter-gradient-lines($column-amount));
+		} @else {
+			@include visual-grid-gradient-background(column-gradient-lines($column-amount));	
+		}
+		@if $visual-grid-index == back {
+		  z-index: -1;
+		}
+		@else if $visual-grid-index == front {
+		  z-index: 9999;
+		}
+
+	}
+}

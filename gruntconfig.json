@@ -1,0 +1,13 @@
+{
+    "name"       : "Moritz Jacobs",
+    "copy"       : "(c) 2014 Moritz Jacobs",
+    "version"    : "0.1",
+    
+    
+    "path_theme" : "",
+    "path_scss"  : "../scss/",
+    "path_css"   : "../css/",
+    "path_js"    : "../js/",
+
+    "banner": "/*! <%= config.name %>, v<%= config.version %> | <%= config.copy %> | <%= grunt.template.today('yyyy-mm-dd') %> */"
+}

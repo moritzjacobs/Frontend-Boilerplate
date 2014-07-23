@@ -1,0 +1,143 @@
+body {
+	background-color: $page-background;
+	letter-spacing: $letter-spacing;
+	color: $font-color;
+	font-family: $body-font;
+	font-size: $font-size;
+	line-height: $line-height;
+	-webkit-font-smoothing: antialiased;
+	margin-bottom: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-rendering: optimizeLegibility;
+	// Fix the character spacing for headings
+	font-family: $body-font;
+	font-weight: 700;
+	margin-top: 1em;
+	&:first-child {
+		margin-top: 0;
+	}
+	line-height: 1.25em;
+}
+
+h1 {
+	font-size: $font-size * 2.25;
+	// 16 * 2.25 = 36px
+	font-family: $head-font;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: $font-size * 2;
+	// 16 * 2 = 32px
+}
+
+h3, h4, h5, h6 {
+	font-size: $font-size * 1.5;
+	// 16 * 1.5 = 24px
+	margin: $font-size * 75 / 100 0;
+}
+
+p {
+	margin: $line-height 0 $line-height * 0.5;
+	&:first-child {
+		margin: 0 0 $line-height * 0.5;
+	}
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+	&:hover {
+		color: $link-color--hover;
+	}
+	&:active, &:focus {
+		color: $link-color--hover;
+		outline: none;
+	}
+}
+
+hr {
+	border-bottom: 1px solid $border-color;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	margin: $line-height 0;
+}
+
+img {
+	margin: 0;
+	max-width: 100%;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted $border-color;
+	cursor: help;
+}
+
+address {
+	display: block;
+	margin: 0 0 $line-height / 2;
+}
+
+hgroup {
+	margin-bottom: $line-height / 2;
+}
+
+del {
+	color: lighten($font-color, 15);
+}
+
+blockquote, q {
+	border-left: 2px solid $border-color;
+	color: lighten($font-color, 15);
+	margin: $line-height 0;
+	padding-left: $line-height / 2;
+}
+
+cite {
+	color: lighten($font-color, 25);
+	font-style: italic;
+	display: block;
+	margin-top: $line-height / 2;
+	&:before {
+		content: '\2014 \00A0';
+	}
+}
+
+code, pre {
+	font-family: $mono-font;
+	background-color: $light-gray;
+	color: $dark-gray;
+	font-size: 0.8em;
+	padding: 6px;
+}
+
+code, tt, var {
+	margin: 0 3px;
+}
+
+pre {
+	overflow: auto;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+sub {
+	font-size: 0.66em;
+	position: relative;
+	top: 0.37em;
+}
+
+sup {
+	font-size: 0.66em;
+	position: relative;
+	top: -0.37em;
+}
