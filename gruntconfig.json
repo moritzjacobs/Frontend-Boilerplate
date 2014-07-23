@@ -5,9 +5,9 @@
     
     
     "path_theme" : "",
-    "path_scss"  : "../scss/",
-    "path_css"   : "../css/",
-    "path_js"    : "../js/",
+    "path_scss"  : "./scss/",
+    "path_css"   : "./css/",
+    "path_js"    : "./js/",
 
     "banner": "/*! <%= config.name %>, v<%= config.version %> | <%= config.copy %> | <%= grunt.template.today('yyyy-mm-dd') %> */"
 }

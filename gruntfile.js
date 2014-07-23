@@ -30,7 +30,7 @@ module.exports = function(grunt) {
                     separator: ';'
                 },
                 src: ['<%= config.path_js %>*.js'],
-                dest: '<%= config.path_js %>public/js/main.js'
+                dest: '<%= config.path_js %>public/main.js'
             },
         },
 
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
             },
             js: {
                 files: {
-                    '<%= config.path_theme %>public/js/main.min.js': ['<%= config.path_theme %>public/js/main.js']
+                    '<%= config.path_js %>public/main.min.js': ['<%= config.path_js %>public/main.js']
                 }
             }
         },
