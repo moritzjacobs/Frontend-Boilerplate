@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+	module.exports = function(grunt) {
  
     grunt.registerTask('default', ['compass:dev', 'concat', 'watch']);
     grunt.registerTask('dist', ['compass:dist', 'concat', 'uglify']);
@@ -29,8 +29,8 @@ module.exports = function(grunt) {
                 options: {
                     separator: ';'
                 },
-                src: ['<%= config.path_js %>*.js'],
-                dest: '<%= config.path_js %>public/main.js'
+                src: ['js/*.js'],
+                dest: 'js/public/main.js'
             },
         },
 
@@ -42,31 +42,20 @@ module.exports = function(grunt) {
             },
             js: {
                 files: {
-                    '<%= config.path_js %>public/main.min.js': ['<%= config.path_js %>public/main.js']
+                    'js/public/main.min.js': ['js/public/main.js']
                 }
             }
         },
 
 
 		watch: {
-			php: {
-				files: ['<%= config.path_theme %>/**/*.php'],
-				options: {
-					livereload: true
-				}
-			},
-    		js: {
-    			files: ['<%= config.path_js %>/**/*.js'],
-    			options: {
-    				livereload: true
-    			}
+			js: {
+    			files: ['js/*.js'],
+				tasks: ['concat'],
     		},
 			sass: {
-				files: ['<%= config.path_scss %>/**/*.scss'],
+				files: ['scss/**/*.scss'],
 				tasks: ['compass:dev'],
-				options: {
-					livereload: true
-				}
 			}
 		},
 

@@ -2,4 +2,4 @@
 BASEDIR="$( dirname "$0" )"
 cd "$BASEDIR"
 npm install
-grunt
+./gruntwatch.sh
