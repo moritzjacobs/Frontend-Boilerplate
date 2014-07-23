@@ -1,5 +1,5 @@
 // color and opacity
-@mixin tap-highlight-no($color: #ffffff 1) {
+@mixin tap-highlight($color: #ffffff 0.0) {
 	@if length($color) == 1{
 		-webkit-tap-highlight-color: rgba(nth($color, 1), 1);	
 	} @else if length($color == 2) {

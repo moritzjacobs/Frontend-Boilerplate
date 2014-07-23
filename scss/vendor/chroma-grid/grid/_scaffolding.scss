@@ -75,6 +75,8 @@
 // creates css classes for debugging or warning messages while developing the page
 @if ($scaffolding-debug == true) {
 
+	/* Scaffolding for debug classes is on */
+
 	.warning,
 	.warning-info,
 	.debug,

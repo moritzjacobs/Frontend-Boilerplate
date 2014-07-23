@@ -1,8 +1,8 @@
 @import "compass";
+@import "vendor/chroma-mixins/all";
 @import "basics/resets";
 
-// @import "basics/grid-settings";
-// @import "vendor/chroma-mixins/all";
+@import "basics/grid-settings";
 
 @import "basics/mixins";
 @import "basics/variables";
@@ -10,3 +10,4 @@
 @import "basics/image";
 
 @import "modules/misc";
+

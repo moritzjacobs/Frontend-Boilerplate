@@ -11,13 +11,13 @@
 @mixin selection($color, $background) {
     // WebKit, Opera, & IE9
     ::selection {
-        background: $color; 
-        color: $background;
+        color: $color; 
+        background: $background;
     }
 
 	// Firefox
     ::-moz-selection {
-        background: $color;
-        color: $background;
+        color: $color;
+        background: $background;
     }
 }

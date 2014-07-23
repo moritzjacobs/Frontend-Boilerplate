@@ -8,18 +8,23 @@
         config: grunt.file.readJSON('gruntconfig.json'),
 
         compass: {
-			dist: {
+            options: {
+                sassDir: 'scss',
+                cssDir: 'css',
+                specify: ['scss/**/*.scss']
+            },
+            dist: {
 				options: {
-					sassDir: 'scss',
-					cssDir: 'css',
+					force: true,
+					banner: '<%= config.banner %>',
 					environment: 'production',
-					outputStyle: 'compressed',
+					outputStyle: 'compressed'
 				}
 			},
 			dev: {
 				options: {
-					sassDir: 'scss',
-					cssDir: 'css'
+					environment: 'development',
+					outputStyle: 'expanded'
 				}
 			}
 		},

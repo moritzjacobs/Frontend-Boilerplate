@@ -6,15 +6,14 @@
 	&:focus {
 		outline: 0;
 	}
-
 }
 
 
 // http://www.hongkiat.com/blog/css-dotted-outline/
-@mixin active-style() {
+@mixin active-style($color: #ff0000) {
 	&:active,
 	&:focus {
 		outline: 0;
-		backgrond-color: #e9841d;
+		backgrond-color: $color;
 	}	
 }

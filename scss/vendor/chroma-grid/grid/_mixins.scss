@@ -1,5 +1,5 @@
 // sets box sizing
-@mixin box-sizing($value) {
+@mixin grid-box-sizing($value) {
     -webkit-box-sizing: $value;
     -moz-box-sizing:    $value;
     -ms-box-sizing:     $value;
