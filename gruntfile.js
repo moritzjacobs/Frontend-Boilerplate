@@ -1,11 +1,40 @@
 	module.exports = function(grunt) {
- 
-    grunt.registerTask('default', ['compass:dev', 'concat', 'watch']);
-    grunt.registerTask('dist', ['compass:dist', 'concat', 'uglify']);
- 
+
+    grunt.registerTask('default', ['sass:dev', 'concat', 'watch']);
+    grunt.registerTask('dist', ['sass:dist', 'concat', 'uglify']);
+
 	grunt.initConfig({
         pkg:    grunt.file.readJSON('package.json'),
         config: grunt.file.readJSON('gruntconfig.json'),
+
+		sass: {
+			dev: {
+				options: {
+					style: 'expanded'
+				},
+				files: [{
+					expand: true,
+					cwd: 'scss',
+					src: ['*.scss'],
+					dest: 'css',
+					ext: '.css'
+				}]
+			},
+			dist: {
+				options: {
+					style: 'compressed',
+                    banner: '<%= config.banner %>'
+				},
+				files: [{
+					expand: true,
+					cwd: 'scss',
+					src: ['*.scss'],
+					dest: 'scss',
+					ext: '.css'
+				}]
+			}
+		},
+
 
         compass: {
             options: {
@@ -60,17 +89,18 @@
     		},
 			sass: {
 				files: ['scss/**/*.scss'],
-				tasks: ['compass:dev'],
+				tasks: ['sass:dev'],
 			}
 		},
 
 
 
 	});
- 
+
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
- 
+
 };
