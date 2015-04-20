@@ -1,0 +1,193 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #fcfcfc;
+  letter-spacing: 0;
+  color: #222222;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 27.9px;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin-top: 1em;
+  line-height: 1.25em;
+}
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 40.5px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3, h4, h5, h6 {
+  font-size: 27px;
+  margin: 13.5px 0;
+}
+
+p {
+  margin: 27.9px 0 13.95px;
+}
+p:first-child {
+  margin: 0 0 13.95px;
+}
+
+a {
+  color: #1d859e;
+  text-decoration: none;
+}
+a:hover {
+  color: #1d869f;
+}
+a:active, a:focus {
+  color: #1d869f;
+  outline: none;
+}
+
+hr {
+  border-bottom: 1px solid #CCC;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 27.9px 0;
+}
+
+img {
+  margin: 0;
+  max-width: 100%;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted #CCC;
+  cursor: help;
+}
+
+address {
+  display: block;
+  margin: 0 0 13.95px;
+}
+
+hgroup {
+  margin-bottom: 13.95px;
+}
+
+del {
+  color: #484848;
+}
+
+blockquote, q {
+  border-left: 2px solid #CCC;
+  color: #484848;
+  margin: 27.9px 0;
+  padding-left: 13.95px;
+}
+
+cite {
+  color: #626262;
+  font-style: italic;
+  display: block;
+  margin-top: 13.95px;
+}
+cite:before {
+  content: '\2014 \00A0';
+}
+
+code, pre {
+  font-family: monospace;
+  background-color: #CCC;
+  color: #333;
+  font-size: 0.8em;
+  padding: 6px;
+}
+
+code, tt, var {
+  margin: 0 3px;
+}
+
+pre {
+  overflow: auto;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+sub {
+  font-size: 0.66em;
+  position: relative;
+  top: 0.37em;
+}
+
+sup {
+  font-size: 0.66em;
+  position: relative;
+  top: -0.37em;
+}
