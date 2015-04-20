@@ -22,8 +22,7 @@ module.exports = function (grunt) {
 			},
 			dist: {
 				options: {
-					style: 'compressed',
-                    banner: '<%= config.banner %>',
+					style: 'compressed'
 				},
 				files: [{
 					expand: true,
