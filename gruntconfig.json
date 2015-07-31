@@ -1,7 +1,0 @@
-{
-    "name"       : "Moritz Jacobs",
-    "copy"       : "(c) 2014 Moritz Jacobs",
-    "version"    : "0.1",
-    
-    "banner": "/*! <%= config.name %>, v<%= config.version %> | <%= config.copy %> | <%= grunt.template.today('yyyy-mm-dd') %> */"
-}

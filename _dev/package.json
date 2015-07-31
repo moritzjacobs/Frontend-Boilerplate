@@ -1,0 +1,27 @@
+{
+  "name": "project-title",
+  "version": "0.1.0",
+  "description": "Wordpress website",
+  "homepage": "http://www.url.com/",
+  "readme": "inline readme",
+
+    "dependencies": {
+        "grunt-cli": "latest",
+        "grunt-contrib-sass": "latest",
+        "grunt-contrib-concat": "latest",
+        "grunt-contrib-uglify": "latest",
+        "grunt-contrib-watch": "latest",
+        "grunt-contrib-jshint": "latest"
+    },
+    "devDependencies": {
+        "grunt-ftp-deploy": "latest",
+        "grunt-postcss": "latest",
+        "autoprefixer-core": "latest",
+        "csswring": "latest",
+        "grunt-contrib-clean": "latest",
+        "grunt-php": "~1.5.0",
+        "grunt-shell": "latest",
+        "grunt-htmllint": "latest",
+        "grunt-contrib-copy": "latest"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "name"       : "project-name",
+    "copy"       : "(c) 2015 Moritz Jacobs",
+    "url"        : "http://www.moritzjacobs.de",
+    "version"    : "0.0.1",
+    
+    
+    "path_theme"     : "../../public",
+    "path_src_scss"  : "../_scss/",
+    "path_src_js"    : "../_js/",
+    "path_dev_css"   : "../public/css/",
+    "path_dev_js"    : "../public/js/",
+    "path_dist_css"  : "../public/css/",
+    "path_dist_js"   : "../public/js/",
+    "path_src"       : "../",
+    "path_public"    : "../",
+    
+    "banner": "/*! <%= config.name %>, v<%= config.version %> | <%= config.copy %> (<%= config.url %>) | <%= grunt.template.today('yyyy-mm-dd, HH:MM') %> */",
+
+
+
+    "conf_hostname": "127.0.0.1",
+    "conf_port": "5000",
+    "conf_base": "../."
+}
