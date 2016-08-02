@@ -1,4 +1,4 @@
-@import "../vendor/chroma-grid/settings";						// imports all default grid settings
+@import "chroma-grid/settings";						// imports all default grid settings
 
 
 // change the grid settings to your own needs
@@ -21,4 +21,4 @@ $page-layout				: responsive;			// (responsive|fixed|fluid)
 // $default-breakpoint 		: max-width 			// default behaviour for media queries
 
 
-@import "../vendor/chroma-grid/grid";							// imports the grid system
+@import "chroma-grid/grid";							// imports the grid system

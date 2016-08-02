@@ -1,27 +1,38 @@
 {
-  "name": "project-title",
-  "version": "0.1.0",
-  "description": "Wordpress website",
-  "homepage": "http://www.url.com/",
-  "readme": "inline readme",
-
-    "dependencies": {
-        "grunt-cli": "latest",
-        "grunt-contrib-sass": "latest",
-        "grunt-contrib-concat": "latest",
-        "grunt-contrib-uglify": "latest",
-        "grunt-contrib-watch": "latest",
-        "grunt-contrib-jshint": "latest"
+    "name": "gulp-boilerplate",
+    "version": "1.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/moritzjacobs/Frontend-Boilerplate.git"
     },
-    "devDependencies": {
-        "grunt-ftp-deploy": "latest",
-        "grunt-postcss": "latest",
-        "autoprefixer-core": "latest",
-        "csswring": "latest",
-        "grunt-contrib-clean": "latest",
-        "grunt-php": "~1.5.0",
-        "grunt-shell": "latest",
-        "grunt-htmllint": "latest",
-        "grunt-contrib-copy": "latest"
-    }
+    "keywords": [
+        "gulp",
+        "theme"
+    ],
+    "contributors": [
+        "Manuel Piepereit",
+        "Moritz Jacobs"
+    ],
+    "private": true,
+    "license": "MIT",
+    "main": "gulpfile.js",
+    "dependencies": {
+        "del": "~2.2.1",
+        "dateformat": "~1.0.12",
+        "run-sequence": "~1.2.2",
+        "replace": "~0.3.0",
+        "gulp": "~3.9.1",
+        "gulp-sass": "~2.3.2",
+        "gulp-sourcemaps": "~1.6.0",
+        "gulp-autoprefixer": "~3.1.0",
+        "gulp-concat": "2.6.0",
+        "gulp-uglify": "~2.0.0",
+        "gulp-notify": "~2.2.0",
+        "gulp-header": "~1.8.7",
+        "gulp-jshint": "~2.0.1",
+        "gulp-plumber": "~1.1.0",
+        "gulp-clean-css": "~2.0.12",
+        "gulp-load-plugins": "~1.2.4",
+    },
+    "devDependencies": {}
 }

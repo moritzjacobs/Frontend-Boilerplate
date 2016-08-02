@@ -1,0 +1,15 @@
+{
+    "title": "Project Name",
+    "description": "A project",
+    "homepage": "https://www.moritzjacobs.de",
+    "copyright": "(c) 2015 Moritz Jacobs, mit <3 für Code und Liebe @ Neonpastell GmbH (http://www.neonpastell.de)",
+    "version": "1.0.0",
+    "proxy_url": "http://localhost/project",
+    "paths": {
+        "theme": "../",
+        "src_sass": "../_scss/",
+        "src_js": "../_js/",
+        "dist_css": "../public/css/",
+        "dist_js": "../public/js/"
+    }
+}
